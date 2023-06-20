@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head And Tail Recursion</title>
+    <script>
+        function colors() {
+            let data = 20;
+            console.log(data);
+            if (true) {
+                console.log(data * 20)
+            } else {
+                console.log(data / 20)
+            }
+        }
+        function days() {
+            colors();
+        }
+        function fruits() {
+            days();
+        }
+        function topFunction() {
+            fruits();
+        }
+        topFunction();
+        function test(x) {
+            // console.warn(x)
+            if (x > 0) {
+                test(x - 1)
+            }
+            console.warn(x)
+        }
+
+        let data = 5;
+        test(data)
+    </script>
+</head>
+
+<body>
+    <h1>Head And Tail Recursion</h1>
+</body>
+
+</html>

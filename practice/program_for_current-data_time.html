@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program for Current Data and Time </title>
+    <script>
+        let today = new Data();
+        let dd =today.getData();
+        let mm =today.getMonth()+1;
+        let yyy =today.getFullYear();
+        if(dd<10){
+            dd='0'+dd;
+        }
+        if(mm<10){
+            mm='0'+mm;
+        }
+        today=dd+'/'+mm+'/'+yyy;
+        console.log(today);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
